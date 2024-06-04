@@ -9,7 +9,7 @@ def save_to_brat(s, type, substring, filename,i):
         line = f"T{i}\t{type} {start_position} {end_position}\t{substring}\n"
         f.write(line)
 
-output_path = './test_result_data/result2__glm4.csv'
+output_path = './test_result_data/result.csv'
 title_path = './test_result_data/dataname.csv'
 
 j = 1
@@ -59,7 +59,7 @@ with open(output_path, 'r') as file1:
                 title = row[1]  # 第二列的数据（索引为1）
 
                 # 读取原文内容
-                with open('test_result_data/test_result2/' + title + '.txt', 'r', encoding='utf-8') as file3:
+                with open('test_result_data/result/' + title + '.txt', 'r', encoding='utf-8') as file3:
                     content = file3.read()
                     #print(content)
 
