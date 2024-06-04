@@ -84,7 +84,7 @@ for i, list in enumerate(inputresult):
         str1 = response.choices[0].message
     except Exception as e:
         logger.error(f"Encounter error: {repr(e)} in first step")
-        error_records["No"].append(i)
+        error_records["No."].append(i)
         error_records["Sample"].append(list)
         error_records["Error Message"].append(repr(e))
         error_records["Error Timing Step"].append(1)
@@ -121,7 +121,7 @@ for i, list in enumerate(inputresult):
         str2 = response.choices[0].message
     except Exception as e:
         logger.error(f"Encounter error: {repr(e)} in second step")
-        error_records["No"].append(i)
+        error_records["No."].append(i)
         error_records["Sample"].append(list)
         error_records["Error Message"].append(repr(e))
         error_records["Error Timing Step"].append(2)
